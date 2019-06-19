@@ -4,10 +4,11 @@
   "description": "A simple weather app built with react and openweatherapi",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --mode development",
+    "start": "node server.js",
     "dev": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild": "webpack -p" 
   },
   "keywords": [],
   "author": "",
@@ -31,6 +32,7 @@
   },
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "express": "^4.17.1",
     "file-loader": "^4.0.0",
     "google-maps-react": "^2.0.2",
     "html-webpack-plugin": "^3.2.0",
