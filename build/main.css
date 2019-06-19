@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+p {
+  color: #fff;
+  margin-bottom: 10px;
+  line-height: 1.2; }
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+
+.weather_section {
+  background: linear-gradient(to right, rgba(204, 43, 94, 0.55), rgba(117, 58, 136, 0.46));
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+  position: absolute; }
+
+.button_container {
+  display: flex;
+  align-items: center; }
+
+.input {
+  width: 460px;
+  background: #fff;
+  color: #a3a3a3;
+  font: inherit;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  border: 0;
+  outline: 0;
+  padding: 22px 18px; }
+
+.button {
+  font-family: inherit;
+  cursor: pointer;
+  background: #7f8ff4;
+  color: #fff;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  padding: 12px 36px;
+  margin-left: -96px;
+  border: none;
+  text-transform: uppercase; }
+
+.form {
+  display: flex;
+  justify-content: center;
+  padding: 3em 0; }
+
+.weather_container {
+  vertical-align: top;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; }
+
+.forecast_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  top: 35px; }
+
+.forecast_item {
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 0.7px;
+  color: #eee;
+  text-transform: uppercase;
+  text-align: center; }
+
+.top_content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+  font-size: 28px;
+  font-weight: 300; }
+
+.mid_content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+  align-items: center; }
+
+.mid_content_temp {
+  font-size: 72px; }
+  .mid_content_temp .temp_icon {
+    font-size: 30px;
+    vertical-align: top;
+    line-height: 74px;
+    margin-left: 10px;
+    display: inline-block; }
+
+.left {
+  display: flex;
+  align-items: center; }
+
+.right {
+  font-size: 18px;
+  text-align: right;
+  text-transform: capitalize; }
+
